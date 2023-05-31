@@ -27,9 +27,8 @@ import {
   getTimeFormatter,
   IntervalAnnotationLayer,
   isTimeseriesAnnotationResult,
-  LegendState,
-  smartDateDetailedFormatter,
-  smartDateFormatter,
+  SMART_DATE_DETAILED_ID,
+  SMART_DATE_ID,
   SupersetTheme,
   TimeFormatter,
   TimeseriesAnnotationLayer,
@@ -586,8 +585,8 @@ export function getPadding(
 export function getTooltipTimeFormatter(
   format?: string,
 ): TimeFormatter | StringConstructor {
-  if (format === smartDateFormatter.id) {
-    return smartDateDetailedFormatter;
+  if (format === SMART_DATE_ID) {
+    return getTimeFormatter(SMART_DATE_DETAILED_ID);
   }
   if (format) {
     return getTimeFormatter(format);
@@ -598,8 +597,8 @@ export function getTooltipTimeFormatter(
 export function getXAxisFormatter(
   format?: string,
 ): TimeFormatter | StringConstructor | undefined {
-  if (format === smartDateFormatter.id || !format) {
-    return undefined;
+  if (format === SMART_DATE_ID || !format) {
+    return getTimeFormatter(SMART_DATE_ID);
   }
   if (format) {
     return getTimeFormatter(format);
