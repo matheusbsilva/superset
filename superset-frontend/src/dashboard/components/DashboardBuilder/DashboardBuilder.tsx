@@ -529,7 +529,7 @@ const DashboardBuilder: FC<DashboardBuilderProps> = () => {
     FeatureFlag.DASHBOARD_NATIVE_FILTERS_SET,
   );
   const showFilterBar =
-    (crossFiltersEnabled || nativeFiltersEnabled) && !editMode;
+    (crossFiltersEnabled && nativeFiltersEnabled) && !editMode;
 
   const offset =
     FILTER_BAR_HEADER_HEIGHT +

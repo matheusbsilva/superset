@@ -42,9 +42,11 @@ export const useNativeFilters = () => {
     expandFilters ?? !!filterValues.length,
   );
 
+  const showFilters = getUrlParam(URL_PARAMS.showFilters);
+
   const nativeFiltersEnabled =
     isFeatureEnabled(FeatureFlag.DASHBOARD_NATIVE_FILTERS) &&
-    (canEdit || (!canEdit && filterValues.length !== 0));
+    (canEdit || (!canEdit && filterValues.length !== 0 && showFilters));
 
   const requiredFirstFilter = filterValues.filter(
     filter => filter.requiredFirst,
