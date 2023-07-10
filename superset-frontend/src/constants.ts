@@ -31,6 +31,10 @@ export const URL_PARAMS = {
     name: 'standalone',
     type: 'number',
   },
+  guestToken: {
+    name: 'guest_token',
+    type: 'string',
+  },
   uiConfig: {
     name: 'uiConfig',
     type: 'number',

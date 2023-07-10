@@ -151,6 +151,26 @@ export function getChartPermalink(
   });
 }
 
+export async function getGuestToken({
+  user,
+  resources,
+  rls,
+}: {
+  user: object;
+  resources: object[];
+  rls: object[];
+}) {
+  const endpoint = '/api/v1/security/guest_token';
+  return SupersetClient.post({
+    endpoint,
+    jsonPayload: {
+      user,
+      resources,
+      rls,
+    },
+  }).then(result => result.json.token as string);
+}
+
 export function getDashboardPermalink({
   dashboardId,
   dataMask,
