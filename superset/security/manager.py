@@ -2123,7 +2123,7 @@ class SupersetSecurityManager(  # pylint: disable=too-many-public-methods
         """
         raw_token = req.headers.get(
             current_app.config["GUEST_TOKEN_HEADER_NAME"]
-        ) or req.form.get("guest_token")
+        ) or req.form.get("guest_token") or req.args.get('guest_token')
         if raw_token is None:
             return None
 
