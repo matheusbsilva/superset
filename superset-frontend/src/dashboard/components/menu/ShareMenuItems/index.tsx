@@ -20,13 +20,14 @@ import React from 'react';
 import copyTextToClipboard from 'src/utils/copy';
 import { t, logging } from '@superset-ui/core';
 import { Menu } from 'src/components/Menu';
-import { getDashboardPermalink } from 'src/utils/urlUtils';
+import { getDashboardPermalink, getGuestToken } from 'src/utils/urlUtils';
 import { RootState } from 'src/dashboard/types';
 import { useSelector } from 'react-redux';
 
 interface ShareMenuItemProps {
   url?: string;
   copyMenuItemTitle: string;
+  copyPublicLinkTitle: string;
   emailMenuItemTitle: string;
   emailSubject: string;
   emailBody: string;
@@ -39,6 +40,7 @@ interface ShareMenuItemProps {
 const ShareMenuItems = (props: ShareMenuItemProps) => {
   const {
     copyMenuItemTitle,
+    copyPublicLinkTitle,
     emailMenuItemTitle,
     emailSubject,
     emailBody,
@@ -85,8 +87,57 @@ const ShareMenuItems = (props: ShareMenuItemProps) => {
     }
   }
 
+  function formatValue(value: string | number | Array<string | number>) {
+    let result = value;
+
+    if (Array.isArray(value)) {
+      result = `(${value.map(val => `'${val}'`).join(',')})`;
+    } else if (typeof value === 'string') {
+      result = `'${value}'`;
+    }
+
+    return result;
+  }
+
+  async function generatePublicUrl() {
+    const filters = Object.entries(dataMask);
+    const cls = filters.flatMap(val =>
+      val[1].extraFormData?.filters?.map(
+        filter => `${filter.col} ${filter.op} ${formatValue(filter.val)}`,
+      ),
+    );
+    const rls = cls
+      .filter(item => item !== undefined)
+      .map(clause => ({ clause }));
+    const user = { username: 'guest', first_name: 'guest' };
+    const resources = [{ id: dashboardId.toString(), type: 'dashboard' }];
+    const uiConfig = 1;
+    const standalone = true;
+
+    return getGuestToken({ user, resources, rls }).then(token => {
+      const urlParams = `uiConfig=${uiConfig}&standalone=${standalone}&guest_token=${token}`;
+
+      return `${window.location.origin}/dashboard/${dashboardId}/public?${urlParams}`;
+    });
+  }
+
+  async function onSharePublic() {
+    try {
+      copyTextToClipboard(generatePublicUrl);
+      addSuccessToast(t('Copied to clipboard!'));
+    } catch (error) {
+      logging.error(error);
+      addDangerToast(t('Sorry, something went wrong. Try again later.'));
+    }
+  }
+
   return (
     <Menu selectable={false}>
+      <Menu.Item key="copy-public-url" {...rest}>
+        <div onClick={onSharePublic} role="button" tabIndex={0}>
+          {copyPublicLinkTitle}
+        </div>
+      </Menu.Item>
       <Menu.Item key="copy-url" {...rest}>
         <div onClick={onCopyLink} role="button" tabIndex={0}>
           {copyMenuItemTitle}
