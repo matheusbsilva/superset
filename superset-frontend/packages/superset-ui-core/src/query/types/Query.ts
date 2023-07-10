@@ -52,6 +52,7 @@ export type SetQueryObjectFilterClause = BaseQueryObjectFilterClause & {
 
 export type UnaryQueryObjectFilterClause = BaseQueryObjectFilterClause & {
   op: UnaryOperator;
+  val?: (string | number | boolean)[];
   formattedVal?: string;
 };
 
