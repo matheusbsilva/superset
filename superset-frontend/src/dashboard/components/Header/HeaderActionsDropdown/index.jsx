@@ -329,7 +329,7 @@ class HeaderActionsDropdown extends React.PureComponent {
             <ShareMenuItems
               url={url}
               copyMenuItemTitle={t('Copy permalink to clipboard')}
-              copyPublicLinkTitle="Copy public link to clipboard"
+              copyPublicLinkTitle={t('Copy public link to clipboard')}
               emailMenuItemTitle={t('Share permalink by email')}
               emailSubject={emailSubject}
               emailBody={emailBody}
