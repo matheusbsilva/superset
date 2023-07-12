@@ -71,9 +71,6 @@
         "%(suggestion)s statt \"%(undefinedParameter)s“?",
         "%(firstSuggestions)s oder %(lastSuggestion)s statt „%(undefinedParameter)s“?"
       ],
-      "%(user)s was granted the role %(role)s that gives access to the %(datasource)s": [
-        "%(user)s wurde die Rolle %(role)s gewährt, die den Zugriff auf %(datasource)s erlaubt"
-      ],
       "%(user)s's profile": ["Profil von %(user)s"],
       "%(validator)s was unable to check your query.\nPlease recheck your query.\nException: %(ex)s": [
         "%(validator)s konnte Ihre Abfrage nicht überprüfen.\nBitte überprüfen Sie Ihre Anfrage.\nAusnahme: %(ex)s"
@@ -292,12 +289,10 @@
       "AXIS TITLE POSITION": ["Y-ACHSE TITEL POSITION"],
       "About": ["Über"],
       "Access": ["Zugang"],
-      "Access requests": ["Zugriffsanforderungen"],
       "Access to user activity data is restricted": [
         "Der Zugriff auf Benutzeraktivitätsdaten ist eingeschränkt"
       ],
       "Access token": ["Zugangs-Token"],
-      "Access was requested": ["Zugang wurde beantragt"],
       "Action": ["Aktion"],
       "Action Log": ["Aktionsprotokoll"],
       "Actions": ["Aktion"],
@@ -1138,7 +1133,6 @@
       "Charts could not be deleted.": [
         "Diagramme konnten nicht gelöscht werden."
       ],
-      "Check configuration": ["Konfiguration prüfen"],
       "Check for sorting ascending": [
         "Überprüfen Sie die Sortierung aufsteigend"
       ],
@@ -1479,9 +1473,6 @@
       "Could not load database driver": [
         "Datenbanktreiber konnte nicht geladen werden"
       ],
-      "Could not load database driver: %(driver_name)s": [
-        "Datenbanktreiber konnte nicht geladen werden: %(driver_name)s"
-      ],
       "Could not load database driver: {}": [
         "Datenbanktreiber konnte nicht geladen werden: {}"
       ],
@@ -1513,7 +1504,6 @@
       "Create new filter set": ["Erstelle neue Filtergruppe"],
       "Create or select schema...": ["Schema erstellen oder auswählen…"],
       "Created": ["Erstellt"],
-      "Created On": ["Erstellt am"],
       "Created by": ["Erstellt von"],
       "Created by me": ["Von mir erstellt"],
       "Created content": ["Erstellter Inhalt"],
@@ -1534,6 +1524,8 @@
       ],
       "Cross-filters": ["Kreuzfilter"],
       "Cumulative": ["Kumuliert"],
+      "Currency prefix or suffix": [""],
+      "Currency symbol": [""],
       "Currently rendered: %s": ["Derzeit dargestellt: %s"],
       "Custom": ["Angepasst"],
       "Custom Plugin": ["Benutzerdefiniertes Plugin"],
@@ -1546,6 +1538,7 @@
         "Benutzerdefinierte SQL-Felder dürfen keine Unterabfragen enthalten."
       ],
       "Custom time filter plugin": ["Benutzerdefiniertes Zeitfilter-Plugin"],
+      "Custom width of the screenshot in pixels": [""],
       "Customize": ["Anpassen"],
       "Customize Metrics": ["Anpassen von Metriken"],
       "Customize columns": ["Spalten anpassen"],
@@ -1643,7 +1636,6 @@
       ],
       "Database Connections": ["Datenbankverbindungen"],
       "Database Creation Error": ["Fehler bei der Datenbankerstellung"],
-      "Database URL": ["Datenbank URL"],
       "Database connected": ["Datenbank verbunden"],
       "Database could not be created.": [
         "Datenbank konnte nicht erstellt werden."
@@ -1674,7 +1666,6 @@
         "Datenbank darf nicht geändert werden"
       ],
       "Database not found.": ["Datenbank nicht gefunden."],
-      "Database not found: %(id)s": ["Datenbank nicht gefunden: %(id)s"],
       "Database parameters are invalid.": ["Datenbankparameter sind ungültig."],
       "Database passwords": ["Datenbank-Kennwörter"],
       "Database port": ["Datenbankport"],
@@ -1986,7 +1977,6 @@
       "Drop columns/metrics here or click": [
         "Spalten/Metriken hierhin ziehen und ablegen oder klicken"
       ],
-      "Dual Line Chart": ["Doppelliniendiagramm"],
       "Duplicate": ["Duplizieren"],
       "Duplicate column name(s): %(columns)s": [
         "Doppelte Spaltenname(n): %(columns)s"
@@ -2419,7 +2409,6 @@
       "Form data not found in cache, reverting to dataset metadata.": [
         "Formulardaten nicht im Cache gefunden. Es wird auf Datensatz-Metadaten zurückgesetzt."
       ],
-      "Formattable": ["Formattabelle"],
       "Formatted CSV attached in email": [
         "Formatierte CSV-Datei in E-Mail angehängt"
       ],
@@ -2549,9 +2538,6 @@
       "If table exists do one of the following: Fail (do nothing), Replace (drop and recreate table) or Append (insert data).": [
         "Wenn eine Tabelle vorhanden ist, soll folgendes passieren: Fehlschlagen (Nichts tun), Ersetzen (Tabelle löschen und neu erstellen) oder Anhängen (Daten einfügen)."
       ],
-      "Ignore cache when generating screenshot": [
-        "Cache beim Generieren eines Screenshots ignorieren"
-      ],
       "Ignore null locations": ["Angesetzte (Null) Örtlichkeiten ignorieren"],
       "Ignore time": ["Zeit ignorieren"],
       "Image (PNG) embedded in email": ["Bild (PNG) in E-Mail eingebettet"],
@@ -2606,6 +2592,7 @@
       "Info": ["Info"],
       "Inner Radius": ["Innenradius"],
       "Inner radius of donut hole": ["Innerer Radius des Donutlochs"],
+      "Input custom width in pixels": [""],
       "Input field supports custom rotation. e.g. 30 for 30°": [
         "Das Eingabefeld unterstützt benutzerdefinierte Drehung. z.B. 30 für 30°"
       ],
@@ -2632,9 +2619,6 @@
         "Ungültiger erweiterter Datentyp: %(advanced_data_type)s"
       ],
       "Invalid certificate": ["Ungültiges Zertifikat"],
-      "Invalid connection string, a valid string usually follows:\n'DRIVER://USER:PASSWORD@DB-HOST/DATABASE-NAME'": [
-        "Ungültige Verbindungszeichenfolge, eine gültige Zeichenfolge lautet normalerweise:\n\"DRIVER://USER:PASSWORD@DB-HOST/DATABASE-NAME\""
-      ],
       "Invalid connection string, a valid string usually follows: backend+driver://user:password@database-host/database-name": [
         "Ungültige Verbindungszeichenfolge, eine gültige Zeichenfolge folgt normalerweise: treiber://konto:passwort@datenbank-host/datenbank-name"
       ],
@@ -2645,6 +2629,7 @@
       "Invalid cumulative operator: %(operator)s": [
         "Ungültiger kumulativer Operator: %(operator)s"
       ],
+      "Invalid currency code in saved metrics": [""],
       "Invalid date/timestamp format": ["Ungültiges Datums-/Zeitstempelformat"],
       "Invalid filter configuration, please select a column": [
         "Ungültige Filterkonfiguration, bitte Spalte auswählen"
@@ -2772,8 +2757,6 @@
       ],
       "Least recently modified": ["Zuletzt geändert"],
       "Left": ["Links"],
-      "Left Axis Format": ["Format der linken Achse"],
-      "Left Axis chart(s)": ["Diagramm(e) der linken Achse"],
       "Left Margin": ["Linker Abstand"],
       "Left margin, in pixels, allowing for more room for axis labels": [
         "Linker Rand in Pixeln, um mehr Platz für Achsenbeschriftungen zu schaffen"
@@ -2954,6 +2937,7 @@
       "Metric change in value from `since` to `until`": [
         "Metrische Wertänderung von 'seit' zu 'bis'"
       ],
+      "Metric currency": [""],
       "Metric descending": ["Metrik absteigend"],
       "Metric factor change from `since` to `until`": [
         "Änderung des metrischen Faktors von \"seit\" zu \"bis\""
@@ -3124,7 +3108,6 @@
       "Nightingale Rose Chart": ["Nightingale Rose Diagramm"],
       "No": ["Nein"],
       "No %s yet": ["Noch keine %s"],
-      "No Access!": ["Keine Zugriff!"],
       "No Data": ["Keine Daten"],
       "No Results": ["Keine Ergebnisse"],
       "No annotation layers": ["Keine Anmerkungs-Layer"],
@@ -3331,9 +3314,6 @@
       "One or more parameters specified in the query are missing.": [
         "Ein oder mehrere in der Abfrage angegebene Parameter fehlen."
       ],
-      "One or more required fields are missing in the request. Please try again, and if the problem persists contact your administrator.": [
-        "Ein oder mehrere Pflichtfelder fehlen in der Anfrage. Versuchen Sie es erneut, und wenn das Problem weiterhin besteht, wenden Sie sich an Ihre/n Administrator*in."
-      ],
       "One ore more annotation layers failed loading.": [
         "Eine oder mehrere Anmerkungsebenen konnten nicht geladen werden."
       ],
@@ -3524,9 +3504,6 @@
       "Pick a set of deck.gl charts to layer on top of one another": [
         "Wählen Sie eine Reihe von deck.gl Diagrammen aus, die übereinander gelegt werden sollen"
       ],
-      "Pick a time granularity for your time series": [
-        "Wählen Sie eine Zeitgranularität für Ihre Zeitreihe"
-      ],
       "Pick a title for you annotation.": [
         "Wählen Sie einen Titel für Ihre Anmerkung aus."
       ],
@@ -3575,9 +3552,6 @@
       ],
       "Please choose at least one groupby": [
         "Bitte wählen Sie mindestens ein Gruppierungs-Kriterium"
-      ],
-      "Please choose different metrics on left and right axis": [
-        "Bitte wählen Sie verschiedene Metriken für die linke und rechte Achse"
       ],
       "Please confirm": ["Bitte bestätigen"],
       "Please confirm the overwrite values.": [
@@ -3669,6 +3643,8 @@
       ],
       "Predictive": ["Prädikativ"],
       "Predictive Analytics": ["Prädiktive Analysen"],
+      "Prefix": [""],
+      "Prefix or suffix": [""],
       "Preview": ["Vorschau"],
       "Preview: `%s`": ["Vorschau: `%s"],
       "Previous": ["Zurück"],
@@ -3792,7 +3768,6 @@
       "Refresh the default values": ["Aktualisieren der Standardwerte"],
       "Refreshing charts": ["Aktualisieren von Diagrammen"],
       "Refreshing columns": ["Aktualisieren von Spalten"],
-      "Regex": ["Regex"],
       "Relational": ["Relational"],
       "Relationships between community channels": [
         "Beziehungen zwischen Community-Kanälen"
@@ -3869,7 +3844,6 @@
       "Reports": ["Reports"],
       "Repulsion": ["Abstoßung"],
       "Repulsion strength between nodes": ["Abstoßungsstärke zwischen Knoten"],
-      "Request Permissions": ["Berechtigung anfordern"],
       "Request is incorrect: %(error)s": ["Anfrage ist falsch: %(error)s"],
       "Request is not JSON": ["Anfrage ist nicht JSON"],
       "Request missing data field.": ["Datenfeld fehlt in Abfrage."],
@@ -3917,9 +3891,6 @@
         "Klicken Sie mit der rechten Maustaste auf einen Bemaßungswert, um einen Drilldown um diesen Wert durchzuführen."
       ],
       "Role": ["Rolle"],
-      "Role %(r)s was extended to provide the access to the datasource %(ds)s": [
-        "Rolle %(r)s wurde erweitert, um den Zugriff auf die Datenquelle %(ds)s zu gewähren"
-      ],
       "Roles": ["Rollen"],
       "Roles is a list which defines access to the dashboard. Granting a role access to a dashboard will bypass dataset level checks. If no roles are defined, regular access permissions apply.": [
         "Rollen ist eine Liste, die den Zugriff auf das Dashboard definiert. Wenn Sie einer Rolle Zugriff auf ein Dashboard gewähren, werden Prüfungen auf Datensatzebene umgangen. Wenn keine Rollen definiert sind, werden die generellen Berechtigungen angewendet."
@@ -3927,7 +3898,6 @@
       "Roles is a list which defines access to the dashboard. Granting a role access to a dashboard will bypass dataset level checks.If no roles are defined, regular access permissions apply.": [
         "Rollen ist eine Liste, die den Zugriff auf das Dashboard definiert. Wenn Sie einer Rolle Zugriff auf ein Dashboard gewähren, werden Prüfungen auf Datensatzebene umgangen. Wenn keine Rollen definiert sind, werden die generellen Berechtigungen angewendet."
       ],
-      "Roles to grant": ["Zu vergebende Rollen"],
       "Rolling Function": ["Rollierende Funktion"],
       "Rolling Window": ["Rollierendes Fenster"],
       "Rolling function": ["Rollierende Funktion"],
@@ -4096,7 +4066,6 @@
       ],
       "Schema": ["Schema"],
       "Schema cache timeout": ["Zeitüberschreitung Schema-Zwischenspeicher"],
-      "Schema undefined": ["Schema nicht definiert"],
       "Schema, as used only in some databases like Postgres, Redshift and DB2": [
         "Schema, wie es nur in einigen Datenbanken wie Postgres, Redshift und DB2 verwendet wird"
       ],
@@ -4105,6 +4074,8 @@
       ],
       "Scope": ["Geltungsbereich"],
       "Scoping": ["Auswahlverfahren"],
+      "Screenshot width": [""],
+      "Screenshot width must be between %(min)spx and %(max)spx": [""],
       "Scroll": ["Scrollen"],
       "Scroll down to the bottom to enable overwriting changes. ": [
         "Scrollen Sie nach unten, um das Überschreiben von Änderungen zu aktivieren. "
@@ -4551,6 +4522,7 @@
       "Subtotal": ["Zwischensumme"],
       "Success": ["Erfolg"],
       "Successfully changed dataset!": ["Datensatz erfolgreich geändert!"],
+      "Suffix": [""],
       "Suffix to apply after the percentage display": [
         "Suffix, das hinter der Prozentanzeige angezeigt werden soll"
       ],
@@ -4681,9 +4653,6 @@
       ],
       "The X-axis is not on the filters list which will prevent it from being used in\n            time range filters in dashboards. Would you like to add it to the filters list?": [
         "Die X-Achse befindet sich nicht in der Filterliste, weshalb sie nicht als\n            Zeitbereichsfilter in Dashboards verwendet werden kaann. Möchten Sie es zur Filterliste hinzufügen?"
-      ],
-      "The access requests seem to have been deleted": [
-        "Die Zugriffsanfragen scheinen gelöscht worden zu sein"
       ],
       "The annotation has been saved": [
         "Die Anmerkung wurde erfolgreich gespeichert"
@@ -4890,9 +4859,6 @@
       "The port number is invalid.": ["Die Port-Nummer ist ungültig."],
       "The primary metric is used to define the arc segment sizes": [
         "Die primäre Metrik wird verwendet, um die Bogensegmentgrößen zu definieren"
-      ],
-      "The provided `rows` argument is not a valid integer.": [
-        "Das angegebene Argument 'rows' ist keine gültige ganze Zahl."
       ],
       "The query associated with the results was deleted.": [
         "Die den Ergebnissen zugeordnete Abfrage wurde gelöscht."
@@ -5210,9 +5176,6 @@
       "This dashboard is ready to embed. In your application, pass the following id to the SDK:": [
         "Dieses Dashboard ist bereit zum Einbetten. Übergeben Sie in Ihrer Anwendung die folgende ID an das SDK:"
       ],
-      "This dashboard was changed recently. Please reload dashboard to get latest version.": [
-        "Dieses Dashboard wurde kürzlich geändert. Bitte laden Sie das Dashboard neu, um die neueste Version zu erhalten."
-      ],
       "This dashboard was saved successfully.": [
         "Dieses Dashboard wurde erfolgreich gespeichert."
       ],
@@ -5233,6 +5196,12 @@
       ],
       "This defines the level of the hierarchy": [
         "Dies definiert die Ebene der Hierarchie"
+      ],
+      "This field is used as a unique identifier to attach the calculated dimension to charts. It is also used as the alias in the SQL query.": [
+        ""
+      ],
+      "This field is used as a unique identifier to attach the metric to charts. It is also used as the alias in the SQL query.": [
+        ""
       ],
       "This fields acts a Superset view, meaning that Superset will run a query against this string as a subquery.": [
         "Diese Felder fungieren als Superset-Ansicht, was bedeutet, dass Superset eine Abfrage für diese Zeichenfolge als Unterabfrage ausführt."
@@ -5641,7 +5610,6 @@
         "Wird verwendet, um einen Datensatz zusammenzufassen, indem mehrere Statistiken entlang zweier Achsen gruppiert werden. Beispiele: Verkaufszahlen nach Region und Monat, Aufgaben nach Status und Beauftragtem, aktive Nutzer nach Alter und Standort. Nicht die visuell beeindruckendste Visualisierung, aber sehr informativ und vielseitig."
       ],
       "User": ["Nutzer*in"],
-      "User Roles": ["Nutzer*innen-Rollen"],
       "User doesn't have the proper permissions.": [
         "Benutzer*in verfügt nicht über die richtigen Berechtigungen."
       ],
@@ -6079,9 +6047,6 @@
       "You are importing one or more saved queries that already exist. Overwriting might cause you to lose some of your work. Are you sure you want to overwrite?": [
         "Sie importieren eine oder mehrere gespeicherte Abfragen, die bereits vorhanden sind. Das Überschreiben kann dazu führen, dass Sie einen Teil Ihrer Arbeit verlieren. Sind Sie sicher, dass Sie überschreiben möchten?"
       ],
-      "You are not authorized to see this query. If you think this is an error, please reach out to your administrator.": [
-        "Sie sind nicht berechtigt, diese Abfrage anzuzeigen. Wenn Sie der Meinung sind, dass dies ein Fehler ist, wenden Sie sich bitte an Ihre*n Administrator*in."
-      ],
       "You can": ["Sie können"],
       "You can add the components in the": [
         "Hinzufügen können Sie die Komponenten in der"
@@ -6122,9 +6087,6 @@
       "You do not have permission to edit this dashboard": [
         "Sie haben keine Zugriff auf diese Datenquelle"
       ],
-      "You do not have permissions to access the datasource(s): %(name)s.": [
-        "Sie haben keine Berechtigungen für den Zugriff auf die Datenquelle(n): %(name)s."
-      ],
       "You do not have permissions to edit this dashboard.": [
         "Sie haben keine Berechtigungen zum Bearbeiten dieses Dashboards."
       ],
@@ -6164,9 +6126,6 @@
       ],
       "You don't have the rights to download as csv": [
         "Sie haben nicht die Rechte, als CSV herunterzuladen"
-      ],
-      "You have no permission to approve this request": [
-        "Sie haben keine Berechtigung, diese Anforderung zu genehmigen"
       ],
       "You have removed this filter.": ["Sie haben diesen Filter entfernt."],
       "You have unsaved changes.": ["Ungesicherte Änderungen vorhanden."],
@@ -6227,9 +6186,6 @@
         "[Longitude] und [Latitude] müssen eingestellt sein"
       ],
       "[Missing Dataset]": ["[Fehlender Datensatz]"],
-      "[Superset] Access to the datasource %(name)s was granted": [
-        "[Superset] Zugriff auf die Datenquelle %(name)s wurde gewährt"
-      ],
       "[Untitled]": ["[Unbenannt]"],
       "[asc]": ["[asc]"],
       "[copy]": ["[Kopie]"],

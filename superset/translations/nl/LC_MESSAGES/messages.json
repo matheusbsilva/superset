@@ -41,9 +41,6 @@
       "%(prefix)s %(title)s": ["%(prefix)s %(title)s"],
       "%(rows)d rows returned": [""],
       "%(subtitle)s\nThis may be triggered by:\n %(issue)s": [""],
-      "%(user)s was granted the role %(role)s that gives access to the %(datasource)s": [
-        "%(user)s kreeg de rol %(role)s die toegang geeft tot de %(datasource)s"
-      ],
       "%(user)s's profile": ["%(user)s’s profiel"],
       "%(validator)s was unable to check your query.\nPlease recheck your query.\nException: %(ex)s": [
         "%(validator)s was niet in staat om uw query te controleren.\nControleer uw query opnieuw.\nUitzondering: %(ex)s"
@@ -198,10 +195,8 @@
       "AXIS TITLE POSITION": [""],
       "About": ["Over"],
       "Access": ["Toegang"],
-      "Access requests": ["Toegangsverzoeken"],
       "Access to user activity data is restricted": [""],
       "Access token": [""],
-      "Access was requested": ["Toegang werd gevraagd"],
       "Action": ["Actie"],
       "Action Log": ["Actie Log"],
       "Actions": ["Acties"],
@@ -856,7 +851,6 @@
       "Charts could not be deleted.": [
         "Grafieken konden niet worden verwijderd."
       ],
-      "Check configuration": ["Check configuratie"],
       "Check for sorting ascending": ["Controle op oplopend sorteren"],
       "Check if the Rose Chart should use segment area instead of segment radius for proportioning": [
         ""
@@ -1113,9 +1107,6 @@
       ],
       "Could not find viz object": ["Kon het viz object niet vinden"],
       "Could not load database driver": ["Kon het database driver niet laden"],
-      "Could not load database driver: %(driver_name)s": [
-        "Kon database driver niet laden: %(driver_name)s"
-      ],
       "Could not load database driver: {}": [
         "Kon het database driver niet laden: {}"
       ],
@@ -1139,7 +1130,6 @@
       "Create new filter set": ["Maak een nieuwe filterset"],
       "Create or select schema...": [""],
       "Created": ["Aangemaakt"],
-      "Created On": ["Gecreëerd op"],
       "Created by": ["Gecreëerd door"],
       "Created content": ["Aangemaakte content"],
       "Created on": ["Gemaakt op"],
@@ -1151,6 +1141,8 @@
         ""
       ],
       "Cumulative": [""],
+      "Currency prefix or suffix": [""],
+      "Currency symbol": [""],
       "Currently rendered: %s": [""],
       "Custom": [""],
       "Custom Plugin": ["Custom Plugin"],
@@ -1159,6 +1151,7 @@
       "Custom SQL ad-hoc metrics are not enabled for this dataset": [""],
       "Custom SQL fields cannot contain sub-queries.": [""],
       "Custom time filter plugin": [""],
+      "Custom width of the screenshot in pixels": [""],
       "Customize": ["Pas aan"],
       "Customize Metrics": [""],
       "Customize columns": [""],
@@ -1239,7 +1232,6 @@
         ""
       ],
       "Database Creation Error": [""],
-      "Database URL": ["Database URL"],
       "Database connected": [""],
       "Database could not be created.": [
         "Database kon niet worden aangemaakt."
@@ -1513,7 +1505,6 @@
       "Drill to detail: %s": [""],
       "Drop a temporal column here or click": [""],
       "Drop columns/metrics here or click": [""],
-      "Dual Line Chart": [""],
       "Duplicate column name(s): %(columns)s": [
         "Dubbele kolomnaam (of -namen): %(columns)s"
       ],
@@ -1861,7 +1852,6 @@
       "Foreign key": [""],
       "Form data not found in cache, reverting to chart metadata.": [""],
       "Form data not found in cache, reverting to dataset metadata.": [""],
-      "Formattable": [""],
       "Formatted CSV attached in email": [""],
       "Formatted date": [""],
       "Forward values": [""],
@@ -2003,6 +1993,7 @@
       "Info": ["Info"],
       "Inner Radius": [""],
       "Inner radius of donut hole": [""],
+      "Input custom width in pixels": [""],
       "Input field supports custom rotation. e.g. 30 for 30°": [""],
       "Instant filtering": ["Onmiddellijke filtering"],
       "Intensity": [""],
@@ -2022,9 +2013,6 @@
       "Invalid JSON": ["Ongeldige JSON"],
       "Invalid advanced data type: %(advanced_data_type)s": [""],
       "Invalid certificate": ["Ongeldig certificaat"],
-      "Invalid connection string, a valid string usually follows:\n'DRIVER://USER:PASSWORD@DB-HOST/DATABASE-NAME'": [
-        "Ongeldige verbindings string, een geldige string volgt meestal:\n‘DRIVER://USER:PASSWORD@DB-HOST/DATABASE-NAME’"
-      ],
       "Invalid connection string, a valid string usually follows: backend+driver://user:password@database-host/database-name": [
         ""
       ],
@@ -2035,6 +2023,7 @@
       "Invalid cumulative operator: %(operator)s": [
         "Ongeldige cumulative operator: %(operator)s"
       ],
+      "Invalid currency code in saved metrics": [""],
       "Invalid date/timestamp format": ["Ongeldig datum/tijdstempel formaat"],
       "Invalid filter configuration, please select a column": [
         "Ongeldige filterconfiguratie, selecteer een kolom"
@@ -2137,8 +2126,6 @@
       ],
       "Least recently modified": ["Meest recente wijziging"],
       "Left": [""],
-      "Left Axis Format": [""],
-      "Left Axis chart(s)": [""],
       "Left Margin": [""],
       "Left margin, in pixels, allowing for more room for axis labels": [""],
       "Left to Right": [""],
@@ -2269,6 +2256,7 @@
         "Meeteenheid toegewezen aan de [Y]-as"
       ],
       "Metric change in value from `since` to `until`": [""],
+      "Metric currency": [""],
       "Metric descending": [""],
       "Metric factor change from `since` to `until`": [""],
       "Metric for node values": [""],
@@ -2391,7 +2379,6 @@
       "Nightingale Rose Chart": [""],
       "No": ["Nee"],
       "No %s yet": ["Nog geen %s"],
-      "No Access!": ["Geen Toegang!"],
       "No Data": ["Geen Data"],
       "No Results": [""],
       "No annotation layers yet": ["Nog geen aantekeningen lagen"],
@@ -2527,9 +2514,6 @@
       "One or more parameters specified in the query are malformatted.": [""],
       "One or more parameters specified in the query are missing.": [
         "Een of meer in de query opgegeven parameters ontbreken."
-      ],
-      "One or more required fields are missing in the request. Please try again, and if the problem persists contact your administrator.": [
-        ""
       ],
       "One ore more annotation layers failed loading.": [
         "Aantekening lagen worden nog steeds geladen."
@@ -2674,9 +2658,6 @@
       ],
       "Pick a nickname for how the database will display in Superset.": [""],
       "Pick a set of deck.gl charts to layer on top of one another": [""],
-      "Pick a time granularity for your time series": [
-        "Kies een tijdschaal voor uw tijdreeks"
-      ],
       "Pick a title for you annotation.": [""],
       "Pick at least one field for [Series]": [
         "Kies minstens één veld voor [Series]"
@@ -2718,9 +2699,6 @@
       ],
       "Please check your template parameters for syntax errors and make sure they match across your SQL query and Set Parameters. Then, try running your query again.": [
         ""
-      ],
-      "Please choose different metrics on left and right axis": [
-        "Kies verschillende meeteenheden op de linker- en rechteras"
       ],
       "Please confirm": ["Gelieve te bevestigen"],
       "Please confirm the overwrite values.": [""],
@@ -2785,6 +2763,8 @@
       ],
       "Predictive": [""],
       "Predictive Analytics": [""],
+      "Prefix": [""],
+      "Prefix or suffix": [""],
       "Preview": ["Preview"],
       "Preview: `%s`": ["Preview: `%s`"],
       "Previous": ["Vorige"],
@@ -2887,7 +2867,6 @@
       "Refresh interval": ["Interval vernieuwen"],
       "Refresh interval saved": [""],
       "Refresh the default values": [""],
-      "Regex": [""],
       "Regular": [""],
       "Regular filters add where clauses to queries if a user belongs to a role referenced in the filter, base filters apply filters to all queries except the roles defined in the filter, and can be used to define what users can see if no RLS filters within a filter group apply to them.": [
         ""
@@ -2956,7 +2935,6 @@
       "Reports": ["Rapporten"],
       "Repulsion": [""],
       "Repulsion strength between nodes": [""],
-      "Request Permissions": ["Permissies aanvragen"],
       "Request is incorrect: %(error)s": ["Verzoek is onjuist: %(error)s"],
       "Request is not JSON": ["Verzoek is geen JSON"],
       "Request missing data field.": ["Verzoek om ontbrekend data veld."],
@@ -2989,9 +2967,6 @@
         ""
       ],
       "Role": ["Rol"],
-      "Role %(r)s was extended to provide the access to the datasource %(ds)s": [
-        "Rol %(r)s werd uitgebreid om toegang te verschaffen tot de gegevensbron %(ds)s"
-      ],
       "Roles": ["Rollen"],
       "Roles is a list which defines access to the dashboard. Granting a role access to a dashboard will bypass dataset level checks. If no roles are defined, regular access permissions apply.": [
         ""
@@ -2999,7 +2974,6 @@
       "Roles is a list which defines access to the dashboard. Granting a role access to a dashboard will bypass dataset level checks.If no roles are defined, regular access permissions apply.": [
         ""
       ],
-      "Roles to grant": ["Toe te kennen rollen"],
       "Rolling Function": [""],
       "Rolling Window": [""],
       "Rolling function": ["Rolfunctie"],
@@ -3116,6 +3090,8 @@
       "Schemas allowed for File upload": [""],
       "Scope": [""],
       "Scoping": ["Scoping"],
+      "Screenshot width": [""],
+      "Screenshot width must be between %(min)spx and %(max)spx": [""],
       "Scroll": [""],
       "Scroll down to the bottom to enable overwriting changes. ": [""],
       "Search": ["Zoek"],
@@ -3170,6 +3146,7 @@
       "Select first filter value by default": [""],
       "Select operator": [""],
       "Select or type a value": [""],
+      "Select or type currency symbol": [""],
       "Select owners": [""],
       "Select saved metrics": [""],
       "Select schema or type to search schemas": [""],
@@ -3438,6 +3415,7 @@
       "Submit": [""],
       "Subtotal": [""],
       "Success": ["Succes"],
+      "Suffix": [""],
       "Suffix to apply after the percentage display": [""],
       "Sum": [""],
       "Sum as Fraction of Columns": [""],
@@ -3540,9 +3518,6 @@
       "The X-axis is not on the filters list": [""],
       "The X-axis is not on the filters list which will prevent it from being used in\n            time range filters in dashboards. Would you like to add it to the filters list?": [
         ""
-      ],
-      "The access requests seem to have been deleted": [
-        "De toegangsverzoeken lijken te zijn gewist"
       ],
       "The annotation has been saved": [""],
       "The annotation has been updated": [""],
@@ -3718,7 +3693,6 @@
       "The port is closed.": ["De poort is gesloten."],
       "The port number is invalid.": [""],
       "The primary metric is used to define the arc segment sizes": [""],
-      "The provided `rows` argument is not a valid integer.": [""],
       "The query associated with the results was deleted.": [""],
       "The query associated with these results could not be found. You need to re-run the original query.": [
         ""
@@ -3961,9 +3935,6 @@
       "This dashboard is ready to embed. In your application, pass the following id to the SDK:": [
         ""
       ],
-      "This dashboard was changed recently. Please reload dashboard to get latest version.": [
-        ""
-      ],
       "This dashboard was saved successfully.": [
         "Dit dashboard is succesvol opgeslagen."
       ],
@@ -3981,6 +3952,12 @@
         "Dit definieert het element dat op de grafiek moet worden uitgezet"
       ],
       "This defines the level of the hierarchy": [""],
+      "This field is used as a unique identifier to attach the calculated dimension to charts. It is also used as the alias in the SQL query.": [
+        ""
+      ],
+      "This field is used as a unique identifier to attach the metric to charts. It is also used as the alias in the SQL query.": [
+        ""
+      ],
       "This fields acts a Superset view, meaning that Superset will run a query against this string as a subquery.": [
         "Dit veld werkt als een Superset view, wat betekent dat Superset een query zal uitvoeren tegen deze string als een subquery."
       ],
@@ -4034,6 +4011,7 @@
       "Time Comparison": [""],
       "Time Format": [""],
       "Time Grain": [""],
+      "Time Grain must be specified when using Time Shift.": [""],
       "Time Granularity": [""],
       "Time Range": [""],
       "Time Series": [""],
@@ -4130,7 +4108,6 @@
       "Top": [""],
       "Top right": [""],
       "Top to Bottom": [""],
-      "Total": [""],
       "Total (%(aggfunc)s)": [""],
       "Total (%(aggregatorName)s)": [""],
       "Total: %s": [""],
@@ -4273,6 +4250,7 @@
       "Use a log scale for the X-axis": [""],
       "Use a log scale for the Y-axis": [""],
       "Use an encrypted connection to the database": [""],
+      "Use an ssh tunnel connection to the database": [""],
       "Use another existing chart as a source for annotations and overlays.\n          Your chart must be one of these visualization types: [%s]": [
         ""
       ],
@@ -4297,7 +4275,6 @@
         ""
       ],
       "User": ["Gebruiker"],
-      "User Roles": ["Gebruikersrollen"],
       "User doesn't have the proper permissions.": [
         "Gebruiker heeft niet de juiste permissies."
       ],
@@ -4621,9 +4598,6 @@
       "You are importing one or more saved queries that already exist. Overwriting might cause you to lose some of your work. Are you sure you want to overwrite?": [
         ""
       ],
-      "You are not authorized to see this query. If you think this is an error, please reach out to your administrator.": [
-        ""
-      ],
       "You can add the components in the": [""],
       "You can add the components in the edit mode.": [""],
       "You can also just click on the chart to apply cross-filter.": [""],
@@ -4650,9 +4624,6 @@
       "You do not have permission to edit this dashboard": [
         "U hebt geen toestemming om dit dashboard te bewerken"
       ],
-      "You do not have permissions to access the datasource(s): %(name)s.": [
-        "U hebt geen rechten voor toegang tot de gegevensbron(nen): %(name)s."
-      ],
       "You do not have permissions to edit this dashboard.": [
         "U hebt geen rechten om dit dashboard te bewerken."
       ],
@@ -4665,9 +4636,6 @@
       "You don't have permission to modify the value.": [""],
       "You don't have the rights to alter this title.": [
         "Je hebt niet de rechten om deze titel te veranderen."
-      ],
-      "You have no permission to approve this request": [
-        "Je hebt geen toestemming om dit verzoek goed te keuren"
       ],
       "You have removed this filter.": ["Je hebt deze filter verwijderd."],
       "You have unsaved changes.": ["Je hebt niet opgeslagen wijzigingen."],
@@ -4719,9 +4687,6 @@
         "[Lengtegraad] en [Breedtegraad] moeten worden ingesteld"
       ],
       "[Missing Dataset]": ["[Missing Dataset]"],
-      "[Superset] Access to the datasource %(name)s was granted": [
-        "[Superset] Toegang tot de gegevensbron %(name)s werd verleend"
-      ],
       "[Untitled]": ["[Untitled]"],
       "[copy]": [""],
       "[dashboard name]": ["[dashboard naam]"],
@@ -4899,6 +4864,7 @@
         ""
       ],
       "pixelated (Sharp)": [""],
+      "pixels": [""],
       "previous calendar month": [""],
       "previous calendar week": [""],
       "previous calendar year": [""],

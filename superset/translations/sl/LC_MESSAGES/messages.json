@@ -47,9 +47,6 @@
       "%(subtitle)s\nThis may be triggered by:\n %(issue)s": [
         "%(subtitle)s\nTo je lahko sproženo z/s: \n %(issue)s"
       ],
-      "%(user)s was granted the role %(role)s that gives access to the %(datasource)s": [
-        "Uporabniku %(user)s je bila dodeljena vloga %(role)s, ki omogoča dostop do %(datasource)s"
-      ],
       "%(user)s's profile": ["Profil uporabnika: %(user)s"],
       "%(validator)s was unable to check your query.\nPlease recheck your query.\nException: %(ex)s": [
         "%(validator)s ni mogel preveriti vaše poizvedbe.\nPonovno preverite poizvedbo.\nIzjema: %(ex)s"
@@ -218,11 +215,9 @@
       "AXIS TITLE POSITION": ["POLOŽAJ OZNAKE OSI"],
       "About": ["O programu"],
       "Access": ["Dostop"],
-      "Access requests": ["Zahteve za dostop"],
       "Access to user activity data is restricted": [
         "Dostop do aktivnosti uporabnikov je omejen"
       ],
-      "Access was requested": ["Zahtevan je bil dostop"],
       "Action": ["Aktivnost"],
       "Action Log": ["Dnevnik aktivnosti"],
       "Actions": ["Aktivnosti"],
@@ -959,7 +954,6 @@
       "Chart width": ["Širina grafikona"],
       "Charts": ["Grafikoni"],
       "Charts could not be deleted.": ["Grafikonov ni mogoče izbrisati."],
-      "Check configuration": ["Preveri nastavitve"],
       "Check for sorting ascending": ["Označi za naraščajoče razvrščanje"],
       "Check if the Rose Chart should use segment area instead of segment radius for proportioning": [
         "Če želite, da grafikon \"Rose\" uporablja površino segmenta namesto radija za proporcioniranje"
@@ -1236,9 +1230,6 @@
       "Could not load database driver": [
         "Ni mogoče naložiti gonilnika podatkovne baze"
       ],
-      "Could not load database driver: %(driver_name)s": [
-        "Gonilnika podatkovne baze ni mogoče naložiti: %(driver_name)s"
-      ],
       "Could not load database driver: {}": [
         "Ni mogoče naložiti gonilnika podatkovne baze: {}"
       ],
@@ -1263,7 +1254,6 @@
       "Create new filter set": ["Ustvarite nov set filtrov"],
       "Create or select schema...": ["Ustvarite ali izberite shemo..."],
       "Created": ["Ustvarjene"],
-      "Created On": ["Ustvarjeno"],
       "Created by": ["Ustvaril"],
       "Created by me": ["Ustvarjeno z moje strani"],
       "Created content": ["Ustvarjena vsebina"],
@@ -1276,6 +1266,8 @@
         ""
       ],
       "Cumulative": ["Kumulativno"],
+      "Currency prefix or suffix": [""],
+      "Currency symbol": [""],
       "Currently rendered: %s": ["Trenutno izrisano: %s"],
       "Custom": ["Prilagojen"],
       "Custom Plugin": ["Prilagojeni vtičnik"],
@@ -1288,6 +1280,7 @@
         "Prilagojena SQL-polja ne smejo vsebovati podpoizvedb."
       ],
       "Custom time filter plugin": ["Prilagojeni vtičnik za časovni filter"],
+      "Custom width of the screenshot in pixels": [""],
       "Customize": ["Prilagodi"],
       "Customize Metrics": ["Prilagodi mere"],
       "Customize columns": ["Prilagodi stolpce"],
@@ -1373,7 +1366,6 @@
         "Shema \"%(schema_name)s\" podatkovne baze \"%(database_name)s\" ni dovoljena za nalaganje Excel datotek. Kontaktirajte administratorja za Superset."
       ],
       "Database Creation Error": ["Napaka pri ustvarjanju podatkovne baze"],
-      "Database URL": ["URL podatkovne baze"],
       "Database connected": ["Podatkovna baza povezana"],
       "Database could not be created.": [
         "Podatkovne baze ni mogoče ustvariti."
@@ -1700,7 +1692,6 @@
       "Drop columns/metrics here or click": [
         "Spustite stolpce/mere sem ali kliknite"
       ],
-      "Dual Line Chart": ["Grafikon z dvojno krivuljo"],
       "Duplicate column name(s): %(columns)s": [
         "Podvojena imena stolpcev: %(columns)s"
       ],
@@ -2088,7 +2079,6 @@
       "Form data not found in cache, reverting to dataset metadata.": [
         "Podatkov ni mogoče najti v predpomnilniku. Uporabljeni bodo metapodatki podatkovnega seta."
       ],
-      "Formattable": ["Prilagodljiv"],
       "Formatted CSV attached in email": ["Oblikovan CSV pripet e-pošti"],
       "Formatted date": ["Oblikovan datum"],
       "Found invalid orderby options": [
@@ -2254,6 +2244,7 @@
       "Info": ["Informacije"],
       "Inner Radius": ["Notranji polmer"],
       "Inner radius of donut hole": ["Notranji polmer kolobarja"],
+      "Input custom width in pixels": [""],
       "Input field supports custom rotation. e.g. 30 for 30°": [
         "Vnosno polje omogoča poljubno rotacijo (vnesite 30 za 30°)"
       ],
@@ -2273,9 +2264,6 @@
         "Neveljaven napreden tip rezultata: %(advanced_data_type)s"
       ],
       "Invalid certificate": ["Neveljaven certifikat"],
-      "Invalid connection string, a valid string usually follows:\n'DRIVER://USER:PASSWORD@DB-HOST/DATABASE-NAME'": [
-        "Neveljaven niz povezave, veljaven niz običajno sledi:\n'DRIVER://USER:PASSWORD@DB-HOST/DATABASE-NAME'"
-      ],
       "Invalid connection string, a valid string usually follows:'DRIVER://USER:PASSWORD@DB-HOST/DATABASE-NAME'<p>Example:'postgresql://user:password@your-postgres-db/database'</p>": [
         "Neveljaven niz povezave. Veljaven niz običajno sledi zapisu:'DRIVER://USER:PASSWORD@DB-HOST/DATABASE-NAME'<p>Primer:'postgresql://user:password@your-postgres-db/database'</p>"
       ],
@@ -2283,6 +2271,7 @@
       "Invalid cumulative operator: %(operator)s": [
         "Neveljaven kumulativni operand: %(operator)s"
       ],
+      "Invalid currency code in saved metrics": [""],
       "Invalid date/timestamp format": ["Neveljaven zapis datuma/časa"],
       "Invalid filter configuration, please select a column": [
         "Neveljavna nastavitev filtrov, izberite stolpec"
@@ -2388,8 +2377,6 @@
       ],
       "Least recently modified": ["Zadnje spremenjeno"],
       "Left": ["Levo"],
-      "Left Axis Format": ["Oblika leve osi"],
-      "Left Axis chart(s)": ["Grafikoni leve osi"],
       "Left Margin": ["Levi rob"],
       "Left margin, in pixels, allowing for more room for axis labels": [
         "Levi rob, v pikslih, s katerim povečamo prostor za oznake osi"
@@ -2535,6 +2522,7 @@
       "Metric change in value from `since` to `until`": [
         "Sprememba mere od vrednosti \"OD\" do \"DO\""
       ],
+      "Metric currency": [""],
       "Metric descending": ["Padajoča mera"],
       "Metric factor change from `since` to `until`": [
         "Sprememba faktorja mere od vrednosti \"OD\" do \"DO\""
@@ -2676,7 +2664,6 @@
       "Nightingale Rose Chart": ["Nightingale Rose grafikon"],
       "No": ["Ne"],
       "No %s yet": ["%s še ne obstajajo"],
-      "No Access!": ["Ni dostopa!"],
       "No Data": ["Ni podatkov"],
       "No Results": ["Ni rezultatov"],
       "No annotation layers": ["Ni slojev z oznakami"],
@@ -2984,9 +2971,6 @@
       "Pick a set of deck.gl charts to layer on top of one another": [
         "Izberite nabor deck.gl grafikonov, ki bodo nanizani en na drugem"
       ],
-      "Pick a time granularity for your time series": [
-        "Izberite granulacijo časa za časovno vrsto"
-      ],
       "Pick a title for you annotation.": ["Izberite naslov za oznako."],
       "Pick at least one field for [Series]": [
         "Izberite vsaj eno polje za [Serije]"
@@ -3025,9 +3009,6 @@
       ],
       "Please check your query for syntax errors near \"%(server_error)s\". Then, try running your query again.": [
         "Preverite, če ima vaša poizvedba sintaktične napake pri \"%(server_error)s\". Potem ponovno poženite poizvedbo."
-      ],
-      "Please choose different metrics on left and right axis": [
-        "Izberite različni meri za levo in desno os"
       ],
       "Please confirm": ["Prosim, potrdite"],
       "Please confirm the overwrite values.": [""],
@@ -3101,6 +3082,8 @@
       ],
       "Predictive": ["Prediktivno"],
       "Predictive Analytics": ["Prediktivna analitika"],
+      "Prefix": [""],
+      "Prefix or suffix": [""],
       "Preview": ["Predogled"],
       "Preview: `%s`": ["Predogled: `%s`"],
       "Previous": ["Prejšnji"],
@@ -3281,7 +3264,6 @@
       "Reports": ["Poročila"],
       "Repulsion": ["Odbijanje"],
       "Repulsion strength between nodes": ["Odbojna sila med vozlišči"],
-      "Request Permissions": ["Zahtevaj dovoljenja"],
       "Request is incorrect: %(error)s": ["Zahtevek je napačen: %(error)s"],
       "Request is not JSON": ["Zahtevek ni JSON"],
       "Request missing data field.": ["Zahtevaj manjkajoča podatkovna polja."],
@@ -3324,11 +3306,7 @@
         ""
       ],
       "Role": ["Vloga"],
-      "Role %(r)s was extended to provide the access to the datasource %(ds)s": [
-        "Vloga %(r)s je bila razširjena za zagotovitev dostopa do podatkovnega vira %(ds)s"
-      ],
       "Roles": ["Vloge"],
-      "Roles to grant": ["Vloge za dovoljevanje"],
       "Rolling Function": ["Drseča funkcija"],
       "Rolling Window": ["Drseče okno"],
       "Rolling function": ["Drseča funkcija"],
@@ -3463,6 +3441,8 @@
       ],
       "Scope": ["Doseg"],
       "Scoping": ["Doseg"],
+      "Screenshot width": [""],
+      "Screenshot width must be between %(min)spx and %(max)spx": [""],
       "Scroll": [""],
       "Scroll down to the bottom to enable overwriting changes. ": [""],
       "Search": ["Iskanje"],
@@ -3825,6 +3805,7 @@
       "Submit": [""],
       "Subtotal": [""],
       "Success": ["Uspelo"],
+      "Suffix": [""],
       "Suffix to apply after the percentage display": [
         "Pripona za prikaz procenta"
       ],
@@ -3928,9 +3909,6 @@
       "The X-axis is not on the filters list": [""],
       "The X-axis is not on the filters list which will prevent it from being used in\n            time range filters in dashboards. Would you like to add it to the filters list?": [
         ""
-      ],
-      "The access requests seem to have been deleted": [
-        "Zdi se, da je bila zahteva za dostop izbrisana"
       ],
       "The annotation has been saved": ["Označba je bila shranjena"],
       "The annotation has been updated": ["Označba je bila posodobljena"],
@@ -4121,9 +4099,6 @@
       "The port number is invalid.": ["Številka vrat je neveljavna."],
       "The primary metric is used to define the arc segment sizes": [
         "Primarna mera določa velikost lokov segmentov"
-      ],
-      "The provided `rows` argument is not a valid integer.": [
-        "Podani argument `rows` ni veljavno celo število."
       ],
       "The query associated with the results was deleted.": [
         "Poizvedba, povezana z rezultati, je bila izbrisana."
@@ -4393,9 +4368,6 @@
       "This dashboard is ready to embed. In your application, pass the following id to the SDK:": [
         "Nadzorna plošča je pripravljena za vgradnjo. V svoji aplikaciji v SDK vključite naslednji ID:"
       ],
-      "This dashboard was changed recently. Please reload dashboard to get latest version.": [
-        "Nadzorna plošča je bila pred kratkim spremenjena. Ponovno jo naložite, da dobite zadnjo verzijo."
-      ],
       "This dashboard was saved successfully.": [
         "Nadzorna plošča je bila uspešno shranjena."
       ],
@@ -4413,6 +4385,12 @@
         "Določa element, ki bo izrisan na grafikonu"
       ],
       "This defines the level of the hierarchy": ["Določa stopnjo hierarhije"],
+      "This field is used as a unique identifier to attach the calculated dimension to charts. It is also used as the alias in the SQL query.": [
+        ""
+      ],
+      "This field is used as a unique identifier to attach the metric to charts. It is also used as the alias in the SQL query.": [
+        ""
+      ],
       "This fields acts a Superset view, meaning that Superset will run a query against this string as a subquery.": [
         "To polje se obnaša kot Supersetov pogled, kar pomeni, da bo Superset izvedel poizvedbo za ta niz kot podpoizvedbo."
       ],
@@ -4770,7 +4748,6 @@
         "Ponazori podatke na podlagi združevanja več statistik vzdolž dveh osi. Npr. prodaja po regijah in mesecih, opravila po statusih in izvajalcih, itd."
       ],
       "User": ["Uporabnik"],
-      "User Roles": ["Vloge uporabnikov"],
       "User doesn't have the proper permissions.": [
         "Uporabnik nima ustreznih dovoljenj."
       ],
@@ -5149,9 +5126,6 @@
       "You are importing one or more saved queries that already exist. Overwriting might cause you to lose some of your work. Are you sure you want to overwrite?": [
         "Uvažate eno ali več shranjenih poizvedb, ki že obstajajo. S prepisom lahko izgubite podatke. Ali ste prepričani, da želite prepisati?"
       ],
-      "You are not authorized to see this query. If you think this is an error, please reach out to your administrator.": [
-        "Nimate dovoljenja za ogled te poizvedbe. Če menite, da je to napaka, kontaktirajte administratorja."
-      ],
       "You can": ["Lahko"],
       "You can add the components in the": ["Lahko dodate elemente v"],
       "You can add the components in the edit mode.": [
@@ -5182,9 +5156,6 @@
       "You do not have permission to edit this dashboard": [
         "Nimate dovoljenja za urejanje te nadzorne plošče"
       ],
-      "You do not have permissions to access the datasource(s): %(name)s.": [
-        "Nimate dovoljenj za dostop do podatkovnih virov: %(name)s."
-      ],
       "You do not have permissions to edit this dashboard.": [
         "Nimate dovoljenj za urejanje te nadzorne plošče."
       ],
@@ -5206,9 +5177,6 @@
       ],
       "You don't have the rights to alter this title.": [
         "Nimate pravic za spreminjanje tega naslova."
-      ],
-      "You have no permission to approve this request": [
-        "Nimate dovoljenja za odobritev te zahteve"
       ],
       "You have removed this filter.": ["Odstranili ste ta filter."],
       "You have unsaved changes.": ["Imate neshranjene spremembe."],
@@ -5264,9 +5232,6 @@
         "[Zemljepisna dolžina] in [Zemljepisna širina] morata biti nastavljeni"
       ],
       "[Missing Dataset]": ["[Manjka podatkovni set]"],
-      "[Superset] Access to the datasource %(name)s was granted": [
-        "[Superset] dostop do podatkovnega vira %(name)s je odobren"
-      ],
       "[Untitled]": ["[Neimenovana]"],
       "[dashboard name]": ["[ime nadzorne plošče]"],
       "[desc]": [""],
@@ -5455,6 +5420,7 @@
       ],
       "permalink state not found": ["stanje povezave ni najdeno"],
       "pixelated (Sharp)": [""],
+      "pixels": [""],
       "previous calendar month": ["prejšnji koledarski mesec"],
       "previous calendar week": ["prejšnji koledarski teden"],
       "previous calendar year": ["prejšnje koledarsko leto"],

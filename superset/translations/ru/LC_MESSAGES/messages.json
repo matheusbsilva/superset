@@ -62,9 +62,6 @@
         "%(firstSuggestions)s или %(lastSuggestion)s вместо \"%(undefinedParameter)s\"?",
         "%(firstSuggestions)s или %(lastSuggestion)s вместо \"%(undefinedParameter)s\"?"
       ],
-      "%(user)s was granted the role %(role)s that gives access to the %(datasource)s": [
-        "%(user)s была назначена роль %(role)s, которая дает доступ к %(datasource)s"
-      ],
       "%(user)s's profile": ["%(user)s - профиль"],
       "%(validator)s was unable to check your query.\nPlease recheck your query.\nException: %(ex)s": [
         "%(validator)s не смог проверить ваш запрос.\nПожалуйста, перепроверьте ваш запрос.\nОшибка: %(ex)s"
@@ -275,12 +272,10 @@
       "AXIS TITLE POSITION": ["ПОЛОЖЕНИЕ ЗАГОЛОВКА ОСИ"],
       "About": ["О программе"],
       "Access": ["Доступ"],
-      "Access requests": ["Запросы доступа"],
       "Access to user activity data is restricted": [
         "Запрещен доступ к истории действий пользователя"
       ],
       "Access token": ["Токен доступа"],
-      "Access was requested": ["Доступ запрошен"],
       "Action": ["Действие"],
       "Action Log": ["Журнал действий"],
       "Actions": ["Действия"],
@@ -1076,7 +1071,6 @@
       "Chart width": ["Ширина графика"],
       "Charts": ["Графики"],
       "Charts could not be deleted.": ["Не удалось удалить графики."],
-      "Check configuration": ["Проверить конфигурацию"],
       "Check for sorting ascending": ["Выберит для сортировки по возрастанию"],
       "Check if the Rose Chart should use segment area instead of segment radius for proportioning": [
         ""
@@ -1388,9 +1382,6 @@
       "Could not load database driver": [
         "Не удалось загрузить драйвер базы данных"
       ],
-      "Could not load database driver: %(driver_name)s": [
-        "Не удалось загрузить драйвер базы данных: %(driver_name)s"
-      ],
       "Could not load database driver: {}": [
         "Не удалось загрузить драйвер базы данных: {}"
       ],
@@ -1418,7 +1409,6 @@
       "Create new filter set": ["Создать новый набор фильтров"],
       "Create or select schema...": ["Создать или выбрать схему..."],
       "Created": ["Создано"],
-      "Created On": ["Дата создания"],
       "Created by": ["Кем создано"],
       "Created by me": ["Создано мной"],
       "Created content": ["Созданный контент"],
@@ -1435,6 +1425,8 @@
         ""
       ],
       "Cumulative": ["С накоплением"],
+      "Currency prefix or suffix": [""],
+      "Currency symbol": [""],
       "Currently rendered: %s": ["Сейчас отрисовано: %s"],
       "Custom": ["Пользовательский"],
       "Custom Plugin": ["Пользовательский плагин"],
@@ -1447,6 +1439,7 @@
         "Пользовательские поля SQL не могут содержать подзапросы."
       ],
       "Custom time filter plugin": ["Пользовательский плагин фильтра времени"],
+      "Custom width of the screenshot in pixels": [""],
       "Customize": ["Кастомизация"],
       "Customize Metrics": ["Настроить меры"],
       "Customize columns": ["Настроить столбцы"],
@@ -1526,7 +1519,6 @@
       ],
       "Database Connections": ["Базы данных"],
       "Database Creation Error": ["Ошибка создания базы данных"],
-      "Database URL": ["URL базы данных"],
       "Database connected": ["Соединение с базой данных установлено"],
       "Database could not be created.": ["Не удалось создать базу данных."],
       "Database could not be deleted.": ["Не удалось удалить базу данных."],
@@ -1551,7 +1543,6 @@
         "База данных недоступна для изменений"
       ],
       "Database not found.": ["База данных не найдена."],
-      "Database not found: %(id)s": ["База данных не найдена: %(id)s"],
       "Database parameters are invalid.": [
         "Параметры базы данных недействительны."
       ],
@@ -2257,7 +2248,6 @@
       "Form data not found in cache, reverting to dataset metadata.": [
         "Данные формы не найдены в кэше, возвращение к метаданным датасета."
       ],
-      "Formattable": ["Форматируемый"],
       "Formatted CSV attached in email": [
         "Форматированный CSV, прикрепленный к письму"
       ],
@@ -2375,9 +2365,6 @@
       "If table exists do one of the following: Fail (do nothing), Replace (drop and recreate table) or Append (insert data).": [
         "Если таблица уже существует, выберите действие: Ошибка (ничего не делать), Заменить (удалить и воссоздать таблицу) или Добавить (вставить данные)."
       ],
-      "Ignore cache when generating screenshot": [
-        "Игнорировать кэш при создании скриншота"
-      ],
       "Ignore null locations": ["Игнорировать пустые локации"],
       "Ignore time": ["Игнорировать время"],
       "Image (PNG) embedded in email": [
@@ -2431,6 +2418,7 @@
       "Info": ["Личные данные"],
       "Inner Radius": ["Внутренний радиус"],
       "Inner radius of donut hole": ["Внутренний радиус отверстия для кольца"],
+      "Input custom width in pixels": [""],
       "Input field supports custom rotation. e.g. 30 for 30°": [
         "Поле для ввода поддерживает пользовательские значения, например 30 для 30°"
       ],
@@ -2457,9 +2445,6 @@
         "Невалидный расширенный тип данных: %(advanced_data_type)s"
       ],
       "Invalid certificate": ["Неверный сертификат"],
-      "Invalid connection string, a valid string usually follows:\n'DRIVER://USER:PASSWORD@DB-HOST/DATABASE-NAME'": [
-        "Недопустимая строка для подключения, валидная строка соответствует шаблону: ДРАЙВЕР://ИМЯ-ПОЛЬЗОВАТЕЛЯ:ПАРОЛЬ@ХОСТ/ИМЯ-БАЗЫ-ДАННЫХ"
-      ],
       "Invalid connection string, a valid string usually follows: backend+driver://user:password@database-host/database-name": [
         "Недопустимая строка для подключения, валидная строка соответствует шаблону: драйвер://имя-пользователя:пароль@хост/имя-базы-данных"
       ],
@@ -2468,6 +2453,7 @@
       ],
       "Invalid cron expression": ["Недопустимое CRON выражение"],
       "Invalid cumulative operator: %(operator)s": [""],
+      "Invalid currency code in saved metrics": [""],
       "Invalid date/timestamp format": ["Недопустимый формат дата/время"],
       "Invalid filter configuration, please select a column": [
         "Неверная конфигурация фильтра, пожалуйста, выберите столбец"
@@ -2578,8 +2564,6 @@
       ],
       "Least recently modified": ["Измененные давно"],
       "Left": ["Слева"],
-      "Left Axis Format": ["Формат левой оси"],
-      "Left Axis chart(s)": ["График(и) по левой оси"],
       "Left Margin": ["Левый отступ"],
       "Left margin, in pixels, allowing for more room for axis labels": [
         "Левый отступ (в пикселях), дает больше пространства меткам оси"
@@ -2734,6 +2718,7 @@
       "Metric change in value from `since` to `until`": [
         "Изменение меры с `до` до `после`"
       ],
+      "Metric currency": [""],
       "Metric descending": ["Мера по убыванию"],
       "Metric factor change from `since` to `until`": [""],
       "Metric for node values": ["Мера для значений вершин"],
@@ -2889,7 +2874,6 @@
       "Nightingale Rose Chart": ["Диаграмма Найтингейл"],
       "No": ["Нет"],
       "No %s yet": ["Пока нет %s"],
-      "No Access!": ["Нет доступа!"],
       "No Data": ["Нет данных"],
       "No Results": ["Нет результатов"],
       "No annotation layers": ["Нет слоев аннотаций"],
@@ -3066,9 +3050,6 @@
       "One or more parameters specified in the query are missing.": [
         "Один или несколько параметров, указанных в запросе, отсутствуют"
       ],
-      "One or more required fields are missing in the request. Please try again, and if the problem persists contact your administrator.": [
-        ""
-      ],
       "One ore more annotation layers failed loading.": [
         "Один или несколько слоев аннотации не удалось загрузить."
       ],
@@ -3235,9 +3216,6 @@
         "Выберите имя для базы данных, которое будет отображаться в Суперсете."
       ],
       "Pick a set of deck.gl charts to layer on top of one another": [""],
-      "Pick a time granularity for your time series": [
-        "Выберите временную детализацию для вашего временного ряда"
-      ],
       "Pick a title for you annotation.": [
         "Выберите название для вашей аннотации"
       ],
@@ -3275,9 +3253,6 @@
       ],
       "Please check your template parameters for syntax errors and make sure they match across your SQL query and Set Parameters. Then, try running your query again.": [
         "Пожалуйста, проверьте параметры вашего шаблона на наличие синтаксических ошибок и убедитесь, что они совпадают с вашим SQL-запросом и заданными параметрами. Затем попробуйте выполнить свой запрос еще раз."
-      ],
-      "Please choose different metrics on left and right axis": [
-        "Выберите разные меры для левой и правой осей"
       ],
       "Please confirm": ["Пожалуйста, подтвердите действие"],
       "Please confirm the overwrite values.": [""],
@@ -3352,6 +3327,8 @@
       ],
       "Predictive": ["Прогноз"],
       "Predictive Analytics": ["Предиктивная аналитика"],
+      "Prefix": [""],
+      "Prefix or suffix": [""],
       "Preview": ["Предпросмотр"],
       "Preview: `%s`": ["Предпросмотр «%s»"],
       "Previous": ["Предыдущий"],
@@ -3541,7 +3518,6 @@
       "Reports": ["Отчеты"],
       "Repulsion": ["Отталкивание"],
       "Repulsion strength between nodes": ["Сила отталкивания вершин"],
-      "Request Permissions": [""],
       "Request is incorrect: %(error)s": ["Неверный запрос: %(error)s"],
       "Request is not JSON": ["Запрос не является JSON"],
       "Request missing data field.": ["В запросе отсутствует поле с данными."],
@@ -3583,11 +3559,7 @@
         ""
       ],
       "Role": ["Роль"],
-      "Role %(r)s was extended to provide the access to the datasource %(ds)s": [
-        "Роль %(r)s была расширена для предоставления доступа к источнику данных %(ds)s"
-      ],
       "Roles": ["Роли"],
-      "Roles to grant": ["Роли для предоставления"],
       "Rolling Function": ["Скользящая средняя"],
       "Rolling Window": ["Скользящее окно"],
       "Rolling function": ["Скользящая средняя"],
@@ -3742,7 +3714,6 @@
       ],
       "Schema": ["Схема"],
       "Schema cache timeout": ["Время жизни кэша схемы"],
-      "Schema undefined": ["Схема не определена"],
       "Schema, as used only in some databases like Postgres, Redshift and DB2": [
         ""
       ],
@@ -3751,6 +3722,8 @@
       ],
       "Scope": ["Область"],
       "Scoping": ["Область применения"],
+      "Screenshot width": [""],
+      "Screenshot width must be between %(min)spx and %(max)spx": [""],
       "Scroll": ["Прокрутка"],
       "Scroll down to the bottom to enable overwriting changes. ": [""],
       "Search": ["Поиск"],
@@ -4150,6 +4123,7 @@
       "Subtotal": ["Подытог"],
       "Success": ["Успешно"],
       "Successfully changed dataset!": [""],
+      "Suffix": [""],
       "Suffix to apply after the percentage display": [
         "Текст после отображения процентной доли"
       ],
@@ -4257,7 +4231,6 @@
       "The X-axis is not on the filters list which will prevent it from being used in\n            time range filters in dashboards. Would you like to add it to the filters list?": [
         ""
       ],
-      "The access requests seem to have been deleted": [""],
       "The annotation has been saved": ["Аннотация сохранена"],
       "The annotation has been updated": ["Аннотация обновлена"],
       "The category of source nodes used to assign colors. If a node is associated with more than one category, only the first will be used.": [
@@ -4449,7 +4422,6 @@
       "The primary metric is used to define the arc segment sizes": [
         "Основная мера используется для определения размера сегмента дуги"
       ],
-      "The provided `rows` argument is not a valid integer.": [""],
       "The query associated with the results was deleted.": [
         "Запрос, связанный с результатами, был удален."
       ],
@@ -4741,9 +4713,6 @@
       "This dashboard is ready to embed. In your application, pass the following id to the SDK:": [
         ""
       ],
-      "This dashboard was changed recently. Please reload dashboard to get latest version.": [
-        "Этот дашборд был недавно изменен. Пожалуйста, обновите дашборд, чтобы увидеть изменения."
-      ],
       "This dashboard was saved successfully.": ["Дашборд успешно сохранен"],
       "This database is managed externally, and can't be edited in Superset": [
         "Эта база данных управляется извне и не может быть изменена в Суперсете"
@@ -4760,6 +4729,12 @@
       ],
       "This defines the level of the hierarchy": [
         "Определяет уровень иерархии"
+      ],
+      "This field is used as a unique identifier to attach the calculated dimension to charts. It is also used as the alias in the SQL query.": [
+        ""
+      ],
+      "This field is used as a unique identifier to attach the metric to charts. It is also used as the alias in the SQL query.": [
+        ""
       ],
       "This fields acts a Superset view, meaning that Superset will run a query against this string as a subquery.": [
         ""
@@ -5132,7 +5107,6 @@
         "Используется для обобщения набора данных путем группировки нескольких показателей по двум осям. Примеры: показатели продаж по регионам и месяцам, задачи по статусу и назначенному лицу, активные пользователи по возрасту и местоположению."
       ],
       "User": ["Пользователь"],
-      "User Roles": ["Роли пользователя"],
       "User doesn't have the proper permissions.": [
         "У пользователя нет надлежащего доступа."
       ],
@@ -5538,9 +5512,6 @@
       "You are importing one or more saved queries that already exist. Overwriting might cause you to lose some of your work. Are you sure you want to overwrite?": [
         "Вы импортируете один или несколько сохраненных запросов, которые уже существуют. Перезапись может привести к потере части вашей работы. Вы уверены, что хотите продолжить?"
       ],
-      "You are not authorized to see this query. If you think this is an error, please reach out to your administrator.": [
-        "Вы не авторизованы для просмотра этого запроса. Если вы считаете, что это ошибка, пожалуйста, обратитесь к своему администратору"
-      ],
       "You can": ["Вы можете"],
       "You can add the components in the": ["Вы можете добавить компоненты в"],
       "You can add the components in the edit mode.": [
@@ -5570,9 +5541,6 @@
       ],
       "You do not have permission to edit this dashboard": [
         "У вас нет прав на редактирование этого дашборда"
-      ],
-      "You do not have permissions to access the datasource(s): %(name)s.": [
-        "У вас нет доступа этого источника данных: %(name)s."
       ],
       "You do not have permissions to edit this dashboard.": [
         "У вас нет прав на редактирование этого дашборда."
@@ -5613,9 +5581,6 @@
       ],
       "You don't have the rights to download as csv": [
         "Недостаточно прав для скачивания в CSV"
-      ],
-      "You have no permission to approve this request": [
-        "Недостаточно прав для одобрения этого запроса"
       ],
       "You have removed this filter.": ["Вы удалили фильтр."],
       "You have unsaved changes.": ["У вас есть несохраненные изменения."],
@@ -5668,9 +5633,6 @@
         "[Долгота] и [Широта] должны быть заданы"
       ],
       "[Missing Dataset]": ["[отсутствующий датасет]"],
-      "[Superset] Access to the datasource %(name)s was granted": [
-        "[Суперсет] Предоставлен доступ к источнику данных %(name)s"
-      ],
       "[Untitled]": ["[Без названия]"],
       "[dashboard name]": ["[имя дашборда]"],
       "[desc]": [""],
