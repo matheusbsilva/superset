@@ -469,7 +469,7 @@ const SliceHeaderControls = (props: SliceHeaderControlsPropsWithRouter) => {
             dashboardId={dashboardId}
             dashboardComponentId={componentId}
             copyMenuItemTitle={t('Copy permalink to clipboard')}
-            copyPublicLinkTitle="Copy public link to clipboard"
+            copyPublicLinkTitle={t('Copy public link to clipboard')}
             emailMenuItemTitle={t('Share chart by email')}
             emailSubject={t('Superset chart')}
             emailBody={t('Check out this chart: ')}
