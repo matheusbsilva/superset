@@ -33,6 +33,7 @@ const createProps = () => ({
   addSuccessToast: jest.fn(),
   url: `/superset/dashboard/${DASHBOARD_ID}`,
   copyMenuItemTitle: 'Copy dashboard URL',
+  copyPublicLinkTitle: 'Copy public dashboard URL',
   emailMenuItemTitle: 'Share dashboard by email',
   emailSubject: 'Superset dashboard COVID Vaccine Dashboard',
   emailBody: 'Check out this dashboard: ',
@@ -76,7 +77,13 @@ test('Should render menu items', () => {
     screen.getByRole('menuitem', { name: 'Copy dashboard URL' }),
   ).toBeInTheDocument();
   expect(
+    screen.getByRole('menuitem', { name: 'Copy public dashboard URL' }),
+  ).toBeInTheDocument();
+  expect(
     screen.getByRole('menuitem', { name: 'Share dashboard by email' }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole('button', { name: 'Copy public dashboard URL' }),
   ).toBeInTheDocument();
   expect(
     screen.getByRole('button', { name: 'Copy dashboard URL' }),

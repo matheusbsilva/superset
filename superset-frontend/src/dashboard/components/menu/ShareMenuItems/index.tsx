@@ -18,7 +18,7 @@
  */
 import React from 'react';
 import copyTextToClipboard from 'src/utils/copy';
-import { t, logging } from '@superset-ui/core';
+import { t, logging, QueryObjectFilterClause  } from '@superset-ui/core';
 import { Menu } from 'src/components/Menu';
 import { getDashboardPermalink, getGuestToken } from 'src/utils/urlUtils';
 import { RootState } from 'src/dashboard/types';
@@ -87,24 +87,22 @@ const ShareMenuItems = (props: ShareMenuItemProps) => {
     }
   }
 
-  function formatValue(value: string | number | Array<string | number>) {
-    let result = value;
+  function formatFilter(filter: QueryObjectFilterClause) {
+    let value: string;
 
-    if (Array.isArray(value)) {
-      result = `(${value.map(val => `'${val}'`).join(',')})`;
-    } else if (typeof value === 'string') {
-      result = `'${value}'`;
+    if (Array.isArray(filter.val)) {
+      value = `(${filter.val.map(val => `'${val}'`).join(',')})`;
+    } else {
+      value = `'${filter.val}'`;
     }
 
-    return result;
+    return `${filter.col} ${filter.op} ${value}`;
   }
 
   async function generatePublicUrl() {
     const filters = Object.entries(dataMask);
-    const cls = filters.flatMap(val =>
-      val[1].extraFormData?.filters?.map(
-        filter => `${filter.col} ${filter.op} ${formatValue(filter.val)}`,
-      ),
+    const cls = filters.flatMap(([, value]) =>
+      value.extraFormData?.filters?.map(filter => formatFilter(filter)),
     );
     const rls = cls
       .filter(item => item !== undefined)
