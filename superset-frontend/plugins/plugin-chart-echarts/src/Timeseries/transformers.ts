@@ -27,6 +27,7 @@ import {
   getTimeFormatter,
   IntervalAnnotationLayer,
   isTimeseriesAnnotationResult,
+  LegendState,
   SMART_DATE_DETAILED_ID,
   SMART_DATE_ID,
   SupersetTheme,

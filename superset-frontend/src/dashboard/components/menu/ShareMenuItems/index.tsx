@@ -18,7 +18,7 @@
  */
 import React from 'react';
 import copyTextToClipboard from 'src/utils/copy';
-import { t, logging, QueryObjectFilterClause  } from '@superset-ui/core';
+import { t, logging, QueryObjectFilterClause } from '@superset-ui/core';
 import { Menu } from 'src/components/Menu';
 import { getDashboardPermalink, getGuestToken } from 'src/utils/urlUtils';
 import { RootState } from 'src/dashboard/types';
