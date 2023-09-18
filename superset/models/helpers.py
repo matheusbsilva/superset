@@ -1438,6 +1438,7 @@ class ExploreMixin:  # pylint: disable=too-many-public-methods
         timeseries_limit: Optional[int] = None,
         timeseries_limit_metric: Optional[Metric] = None,
         time_shift: Optional[str] = None,
+        offset: Optional[str] = None,
     ) -> SqlaQuery:
         """Querying any sqla table from this common interface"""
         if granularity not in self.dttm_cols and granularity is not None:
@@ -1875,6 +1876,7 @@ class ExploreMixin:  # pylint: disable=too-many-public-methods
                             time_range=eq,
                             time_shift=time_shift,
                             extras=extras,
+                            offset=offset
                         )
                         where_clause_and.append(
                             self.get_time_filter(
